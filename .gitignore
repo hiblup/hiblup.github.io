@@ -1,0 +1,10 @@
+## Jekyll.gitignore
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+## Ruby Environment normalization:
+.bundle/
+vendor/bundle
+Gemfile.lock
