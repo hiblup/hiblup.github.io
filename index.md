@@ -94,4 +94,4 @@ HIBLUP ACCOMPLISHED SUCCESSFULLY!
 
 ## Authors
 
-LiLin Yin#, Haohao Zhang#, and Xiaolei Liu <xiaoleiliu (at) mail.hzau.edu.cn>
+LiLin Yin#, Haohao Zhang#, and **Xiaolei Liu**[_(Email)_](mailto:xiaoleiliu@mail.hzau.edu.cn)
