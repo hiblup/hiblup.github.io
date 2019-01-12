@@ -22,7 +22,7 @@ HIBLUP is an R package that provides estimated genetic value of each individual 
 
 ## Installation
 
-It is highly recommended to install Microsoft R Open (https://mran.microsoft.com/download/) to speed up the mathematical calculation of HIBLUP, but this is not required, and HIBLUP can also work with base R. HIBLUP can be easily installed using the following codes:
+It is highly recommended to install [Microsoft R Open](https://mran.microsoft.com/download/) to speed up the mathematical calculation of HIBLUP, but this is not required, and HIBLUP can also work with base R. HIBLUP can be easily installed using the following codes:
 
 ```R
 install.packages("Rcpp")

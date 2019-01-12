@@ -7,5 +7,5 @@ github:
   is_project_page: true
   repository_name: HIBLUP
   repository_url: https://github.com/hiblup/hiblup
-  download_url: http://example.com/download.zip
+  download_url: https://github.com/hiblup/hiblup/raw/master/hiblup_1.1.0_R_x86_64-pc-linux-gnu.tar.gz
   report_issue_url: https://github.com/hiblup/hiblup/issues/new
