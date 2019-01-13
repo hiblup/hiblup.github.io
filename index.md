@@ -29,7 +29,7 @@ install.packages("Rcpp")
 install.packages("RcppParallel")
 install.packages("RcppArmadillo")
 install.packages("bigmemory")
-install.packages("hiblup_1.0.1.tar.gz", repos=NULL)
+install.packages("hiblup_1.1.0_R_x86_64-pc-linux-gnu.tar.gz", repos=NULL)
 ```
 
 ## Quick Start
@@ -95,3 +95,7 @@ HIBLUP ACCOMPLISHED SUCCESSFULLY!
 ## Authors
 
 LiLin Yin#, Haohao Zhang#, and **Xiaolei Liu**[_(Email)_](mailto:xiaoleiliu@mail.hzau.edu.cn)
+
+## Availability
+
+The HIBLUP is distributed as R package (https://hiblup.github.io/) and is free of charge for academic purposes. For commercial purposes, please contact the development team.
