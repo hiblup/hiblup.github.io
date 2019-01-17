@@ -5,7 +5,7 @@ layout: default
 
 HIBLUP is an R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix and estimation of variance components, are also implemented.
 
-- [Download (Linux)](https://github.com/hiblup/hiblup/raw/master/hiblup_1.1.0_R)3.5.1_x86_64-pc-linux-gnu.tar.gz)
+- [Download (Linux)](https://github.com/hiblup/hiblup/raw/master/hiblup_1.1.0_R_3.5.1_x86_64-pc-linux-gnu.tar.gz)
 - [User Manual](https://github.com/hiblup/hiblup/raw/master/hiblup-user-manual.pdf)
 
 ## Features
