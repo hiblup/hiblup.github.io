@@ -1,11 +1,9 @@
 title: HIBLUP
 description: HIBLUP is an Integration of Statistical Methods Under BLUP Framework
-show_downloads: true
 theme: jekyll-theme-cayman
 google_analytics: UA-132127488-1
 github:
   is_project_page: true
   repository_name: HIBLUP
   repository_url: https://github.com/hiblup/hiblup
-  download_url: https://github.com/hiblup/hiblup/raw/master/hiblup_1.1.0_R_3.5.1_x86_64-pc-linux-gnu.tar.gz
   report_issue_url: https://github.com/hiblup/hiblup/issues/new
