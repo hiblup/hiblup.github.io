@@ -32,7 +32,7 @@ install.packages("Rcpp")
 install.packages("RcppParallel")
 install.packages("RcppArmadillo")
 install.packages("bigmemory")
-install.packages("hiblup_1.1.0_R_x86_64-pc-linux-gnu.tar.gz", repos=NULL)
+install.packages("hiblup_1.1.0_R_3.5.1_x86_64-pc-linux-gnu.tar.gz", repos=NULL)
 ```
 
 ## Quick Start
