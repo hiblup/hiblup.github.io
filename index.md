@@ -3,7 +3,7 @@ layout: default
 ---
 # HIBLUP
 
-HIBLUP is an R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix and estimation of variance components, are also implemented.
+HIBLUP is an user-friendly R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix and estimation of variance components, are also implemented.
 
 - Download
   - [HIBLUP_linux_R_3.5.1](https://github.com/hiblup/hiblup/raw/master/hiblup_1.1.0_R_3.5.1_x86_64-pc-linux-gnu.tar.gz)
@@ -21,8 +21,9 @@ HIBLUP is an R package that provides estimated genetic value of each individual 
   - Singe K model
   - Multiple K model
   - Pairs of correlated traits
-- BLUP Framework
-  - ABLUP
+- LMM Framework
+  - BLUP
+  - A/DBLUP
   - GBLUP
   - SSBLUP
 
@@ -45,11 +46,11 @@ The data embedded in HIBLUP was derived from an animal breeding farm, it include
 ```R
 library("hiblup")
 data("hidata")
-X <- model.matrix(~Sex, data=pheno)  # fixed effects
+X <- model.matrix(~as.factor(Sex), data=pheno)  # fixed effects
 R <- as.matrix(pheno$Sire)           # random effects
 gebv <- hiblup(pheno=pheno[,c(1,4)], geno=geno, map=map, geno.id=geno.id,
                pedigree=pedigree, vc.method=c("HI"), mode="A", CV=X, R=R,
-               back.solution=TRUE)
+               snp.solution=TRUE)
 ```
 
 ```text
