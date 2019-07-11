@@ -30,28 +30,27 @@ HIBLUP(He-aI BLUP) is an user-friendly R package that provides estimated genetic
 
 ## Installation
 
-It is highly recommended to install [Microsoft R Open](https://mran.microsoft.com/download/) to speed up the mathematical calculation of HIBLUP, it includes multi-threaded math libraries. These libraries make it possible for so many common R operations, ***such as matrix multiply/inverse, matrix decomposition, and some higher-level matrix operations***, to compute in parallel and use all of the processing power available to [reduce computation times](https://mran.microsoft.com/documents/rro/multithread/#mt-bench), but this is not required, and HIBLUP can also work with base R. HIBLUP can be easily installed using the following codes:
+[Microsoft R Open](https://mran.microsoft.com/download/)(MRO) could speed up the mathematical calculation of HIBLUP, it includes multi-threaded math libraries. These libraries make it possible for so many common R operations, ***such as matrix multiply/inverse, matrix decomposition, and some higher-level matrix operations***, to compute in parallel and use all of the processing power available to [reduce computation times](https://mran.microsoft.com/documents/rro/multithread/#mt-bench). For Linux and macOS, MRO will be installed automatically with HIBLUP package included and no root permission requirements. For Windows, we highly suggest users to install MRO for HIBLUP. Following steps below to complete installation:
 
+### Install on Linux or macOS
 ```shell
-# Linux & macOS (Online installation without root permissions, embedded multi-threaded R interpreter)
-chmod 755 ./hiblupInstaller.sh
-./hiblupInstaller.sh
+$ chmod 755 ./hiblupInstaller.sh
+$ ./hiblupInstaller.sh
 ```
+After installed successfully, restart the terminal or source the system path file, then type `hiblup` to start (needn't to `library(hiblup)`). For R script file (yourscript.r), it can be run directly by `hiblup yourscript.r` instead of `Rscript yourscript.r`
 
+### Install on Windows
 ```R
-# Windows
-install.packages(c("RcppArmadillo", "bigmemory"))
-install.packages("hiblup_1.2.0.zip", repos = NULL)
+> install.packages(c("RcppArmadillo", "bigmemory"))
+> install.packages("hiblup_1.2.0.zip", repos = NULL)
 ```
+After installed successfully, please `library(hiblup)` to start.
 
 ## Quick Start
 
 The data embedded in HIBLUP was derived from an animal breeding farm, it includes a total of 2934 genetic related individuals and 573 of them were genotyped with 50K SNP Chip. The genotype was coded as 0, 1, 2 for AA, AB, BB, respectively, and two traits(t1, t2) were recorded for 800 individuals. Sire information and sex information can be treated as random effect and fixed effect, respectively. A quick start of HIBLUP to fit above model is shown below:
 
-> Important: After installing HIBLUP in Linux or macOS, you need to relogin to the terminal and use the shortcut "hiblup" to start the embedded multi-threaded R interpreter. When started in this way, the hiblup package is loaded by default.
-
 ```R
-library("hiblup")
 data("hidata")
 X <- model.matrix(~as.factor(Sex), data=pheno)  # fixed effects
 R <- as.matrix(pheno$Sire)                      # random effects
