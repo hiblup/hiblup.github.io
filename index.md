@@ -3,7 +3,7 @@ layout: default
 ---
 # HIBLUP
 
-HIBLUP(He-aI BLUP) is an user-friendly R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix, estimation of variance components with various algorithms, and estimation of SNP effects, are also implemented.
+HIBLUP (He-aI BLUP) is an user-friendly R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix, estimation of variance components with various algorithms, and estimation of SNP effects, are also implemented.
 
 ## Download
 - v1.2.0
@@ -30,15 +30,13 @@ HIBLUP(He-aI BLUP) is an user-friendly R package that provides estimated genetic
 
 ## Installation
 
-[Microsoft R Open](https://mran.microsoft.com/download/)(MRO) could speed up the mathematical calculation of HIBLUP, it includes multi-threaded math libraries. These libraries make it possible for so many common R operations, ***such as matrix multiply/inverse, matrix decomposition, and some higher-level matrix operations***, to compute in parallel and use all of the processing power available to [reduce computation times](https://mran.microsoft.com/documents/rro/multithread/#mt-bench). For Linux and macOS, MRO will be installed automatically with HIBLUP package included and no root permission requirements. For Windows, we highly suggest users to install MRO for HIBLUP. Following steps below to complete installation:
-
+[Microsoft R Open](https://mran.microsoft.com/download/) (MRO) could speed up the mathematical calculation of HIBLUP, it includes multi-threaded math libraries. These libraries make it possible for so many common R operations, ***such as matrix multiply/inverse, matrix decomposition, and some higher-level matrix operations***, to compute in parallel and use all of the processing power available to [reduce computation times](https://mran.microsoft.com/documents/rro/multithread/#mt-bench). For Linux and macOS, our shell script could automatically install MRO with HIBLUP package included, and no root permission requirements. For Windows, we highly suggest users to install MRO for HIBLUP. Following steps below to complete installation:
 ### Install on Linux or macOS
 ```shell
 $ chmod 755 ./hiblupInstaller.sh
 $ ./hiblupInstaller.sh
 ```
 After installed successfully, restart the terminal or source the system path file, then type `hiblup` to start (needn't to `library(hiblup)`). For R script file (yourscript.r), it can be run directly by `hiblup yourscript.r` instead of `Rscript yourscript.r`
-
 ### Install on Windows
 ```R
 > install.packages(c("RcppArmadillo", "bigmemory"))
