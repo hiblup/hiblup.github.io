@@ -9,7 +9,7 @@ HIBLUP(He-aI BLUP) is an user-friendly R package that provides estimated genetic
 - v1.2.0
   - [Linux & macOS Online Installer](https://raw.githubusercontent.com/hiblup/hiblup/master/hiblupInstaller.sh)
   - [Windows](https://github.com/hiblup/hiblup/raw/master/hiblup_1.2.0.zip)
-  - [User Manual](https://github.com/hiblup/hiblup/raw/master/hiblup-user-manual-v1.2.0.pdf)
+  - [User Manual](https://github.com/hiblup/hiblup/raw/master/hiblup-user-manual-v1.2.pdf)
 
 ## Features
 
