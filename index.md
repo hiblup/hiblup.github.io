@@ -3,13 +3,13 @@ layout: default
 ---
 # HIBLUP
 
-HIBLUP (He-aI BLUP) is an user-friendly R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix, estimation of variance components with various algorithms, and estimation of SNP effects, are also implemented.
+HIBLUP (He-aI BLUP) is an user-friendly R package that provides estimated genetic value of each individual by maximizing the usage of information from pedigree records, genome, and phenotype, as well as all process-related functions, such as construction of relationship matrix, estimation of variance components with various algorithms, and estimation of SNP effects.
 
 ## Download
-- v1.2.0
-  - [Linux & macOS Online Installer](https://raw.githubusercontent.com/hiblup/hiblup/master/hiblupInstaller.sh)
-  - [Windows](https://github.com/hiblup/hiblup/raw/master/hiblup_1.2.0.zip)
-  - [User Manual](https://github.com/hiblup/hiblup/raw/master/hiblup-user-manual-v1.2.pdf)
+- v1.3.0
+  - [Linux & macOS Online Installer](https://raw.githubusercontent.com/xiaolei-lab/hiblup/master/hiblupInstaller.sh)
+  - [Windows](https://github.com/xiaolei-lab/hiblup/raw/master/version/1.3.0/hiblup_1.3.0.zip)
+  - [User Manual](https://github.com/xiaolei-lab/hiblup/raw/master/manual/hiblup-user-manual-v1.3.pdf)
 
 ## Features
 
@@ -36,23 +36,23 @@ HIBLUP (He-aI BLUP) is an user-friendly R package that provides estimated geneti
 
 ## Installation
 
-[Microsoft R Open](https://mran.microsoft.com/download/) (MRO) could speed up the mathematical calculation of HIBLUP, it includes multi-threaded math libraries. These libraries make it possible for so many common R operations, ***such as matrix multiply/inverse, matrix decomposition, and some higher-level matrix operations***, to compute in parallel and use all of the processing power available to [reduce computation times](https://mran.microsoft.com/documents/rro/multithread/#mt-bench). For Linux and macOS, our shell script could automatically install MRO with HIBLUP package included, and no root permission requirements. For Windows, we highly suggest users to install MRO for HIBLUP. Following steps below to complete installation:
-### Install on Linux or macOS
+[Microsoft R Open](https://mran.microsoft.com/download/) (MRO) could speed up the mathematical calculation of HIBLUP, it includes multi-threaded math libraries. These libraries make it possible for so many common R operations, ***such as matrix multiply/inverse, matrix decomposition, and some higher-level matrix operations***, to compute in parallel and use all of the processing power available to [reduce computation times](https://mran.microsoft.com/documents/rro/multithread/#mt-bench). For Linux and macOS, our shell script could automatically install MRO with HIBLUP package included, and no root permission requirements. For Windows, we highly suggest users to install MRO for HIBLUP. Please follow the steps below to complete the installation:
+### Install HIBLUP on Linux or macOS
 ```shell
 $ chmod 755 ./hiblupInstaller.sh
 $ ./hiblupInstaller.sh
 ```
-After installed successfully, restart the terminal or source the system path file, then type `hiblup` to start (needn't to `library(hiblup)`). For R script file (yourscript.r), it can be run directly by `hiblup yourscript.r` instead of `Rscript yourscript.r`
-### Install on Windows
+After installed successfully, restart the terminal or source the system path file, then type `hiblup` to start (the hiblup library will be automatically imported). For R script file (yourscript.r), it can be run directly by `hiblup yourscript.r` instead of `Rscript yourscript.r`
+### Install HIBLUP on Windows
 ```R
 > install.packages(c("RcppArmadillo", "bigmemory"))
-> install.packages("hiblup_1.2.0.zip", repos = NULL)
+> install.packages("hiblup_1.3.0.zip", repos = NULL)
 ```
 After installed successfully, please `library(hiblup)` to start.
 
 ## Quick Start
 
-The data embedded in HIBLUP was derived from an animal breeding farm, it includes a total of 2934 genetic related individuals and 573 of them were genotyped with 50K SNP Chip. The genotype was coded as 0, 1, 2 for AA, AB, BB, respectively, and two traits(t1, t2) were recorded for 800 individuals. Sire information and sex information can be treated as random effect and fixed effect, respectively. A quick start of HIBLUP to fit above model is shown below:
+The data embedded in HIBLUP was derived from an animal breeding farm, it includes a total of 2934 genetic related individuals and 573 of them were genotyped with 50K SNP Chip. The genotype was coded as 0, 1, 2 for AA, AB, BB, respectively, and two traits(t1, t2) were recorded for 800 individuals. The Sire information and sex information can be treated as random effect and fixed effect, respectively. A quick start of HIBLUP to fit the above model is shown below:
 
 ```R
 data("hidata")
