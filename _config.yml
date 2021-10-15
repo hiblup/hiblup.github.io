@@ -1,9 +1,0 @@
-title: HIBLUP
-description: HIBLUP is an Integration of Statistical Methods Under BLUP Framework
-theme: jekyll-theme-cayman
-google_analytics: UA-132127488-1
-github:
-  is_project_page: true
-  repository_name: HIBLUP
-  repository_url: https://github.com/hiblup/hiblup
-  report_issue_url: https://github.com/hiblup/hiblup/issues/new
